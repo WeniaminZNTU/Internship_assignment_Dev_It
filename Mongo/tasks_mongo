@@ -1,0 +1,17 @@
+1 db.posts.properties.find().skip(5).limit(5)
+2 db.posts.properties.find({like:{$gt:100}})
+3 db.posts.properties.insertOne(
+    title:   "book 1",
+    content: "some content",
+    author:  "some author",
+    like:     100,
+    dislike:  5
+  )
+4 db.posts.properties.aggregate([
+    {$project:{_id:0, author:1}}
+    ])
+  
+  db.posts.properties.aggregate([
+    {$group:{_id:"authors", total_likes:{$sum:"$like"}}}
+    ])
+        

@@ -1,0 +1,21 @@
+button{
+    position: relative;
+
+    padding: 5px, 3px;
+
+    margin-left: 45.5vw;
+}
+
+button:active{
+    color: white;
+    background-color: indigo;
+    border-radius: 5%;
+}
+
+.danger{
+    border: 1.5px solid red;
+    color: red;
+
+    padding: 5px, 3px;
+    border-radius: 10%;
+}

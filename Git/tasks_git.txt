@@ -1,0 +1,11 @@
+git clone git@example.com  # клонирую репозиторий
+git branch dev             # перехожу на ветку dev
+git nano                   # открываю редактор nano
+    ### May be in future   # ввожу текст 
+    ctrl + s               # сохраняю в файл
+    Readme.md              # ввожу имя файла
+    ctrl + x               # выхожу из nano, файл сохраняется
+git branch master          # перехожу на ветку master
+git add .                  # добавляю все новые файлы к комиту
+git commit -m 'add Readme' # делаю коммит
+git push -u origin master  # заливаю на репозиторий
