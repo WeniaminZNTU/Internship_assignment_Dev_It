@@ -1,0 +1,33 @@
+body{
+    /* через flex'ы */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* grid'ы */
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    /* Через position fixed и позиционирование контента по центру экрана*/
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.modal{
+    display: grid;
+
+    height: 290px;
+    width: 400px;
+
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+span{
+    justify-self: center;
+
+    padding-top: 40px;
+    font-size: 26px;
+}
